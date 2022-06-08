@@ -150,6 +150,7 @@ nav {
   background-color: #b7b7a4;
   justify-content: space-around;
   padding: 17px;
+  z-index: 4;
 }
 
 .logo h1 {
@@ -197,7 +198,7 @@ nav ul li a:hover {
   left: 190px;
   top: -7px;
   cursor: pointer;
-  z-index: 43;
+  z-index: 6;
 }
 
 .menu-toggle span {
@@ -208,7 +209,7 @@ nav ul li a:hover {
   border-radius: 3px;
   transition: all 0.5s;
   margin-left: 200px;
-  z-index: 3;
+  z-index: 5;
 }
 
 /* hamburger menu animasi */
