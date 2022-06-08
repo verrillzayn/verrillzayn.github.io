@@ -1,0 +1,430 @@
+/* reset tool mayer web*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  width: 100%;
+}
+/* 
+
+
+
+
+
+
+
+
+
+*/
+/* css */
+
+/* navbar */
+body {
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  background-color: #b7b7a4;
+  justify-content: space-around;
+  padding: 17px;
+}
+
+.logo h1 {
+  color: black;
+  font-family: 'joan', serif;
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: -50px;
+  position: absolute;
+  margin: auto;
+}
+
+nav ul {
+  margin-left: 170px;
+  margin-top: 2px;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Gentium Plus', serif;
+}
+
+nav ul li a:hover {
+  color: rgb(170, 170, 60);
+}
+/* hamburger menu */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  left: 190px;
+  top: -7px;
+  cursor: pointer;
+  z-index: 43;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  transition: all 0.5s;
+  margin-left: 200px;
+  z-index: 3;
+}
+
+/* hamburger menu animasi */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+/* akhir navbar */
+
+/* responsive */
+
+/*  windows  */
+
+@media screen and (max-width: 1279px) {
+  .content {
+    position: absolute;
+    margin-bottom: -10px;
+    margin-top: 3px;
+  }
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+  content {
+    bottom: -2px;
+  }
+  .content {
+    position: absolute;
+    bottom: -4px;
+    margin-bottom: -9px;
+  }
+  .navbar .logo h1 {
+    padding-left: 50px;
+    font-size: 20px;
+  }
+}
+
+/* hp */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a5a58d;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translatex(0);
+  }
+  .content {
+    position: absolute;
+    bottom: -4px;
+    margin-bottom: -13px;
+  }
+  .navbar .logo h1 {
+    padding-left: 50px;
+    font-size: 20px;
+  }
+}
+/* akhir responsive */
+
+/* css utama */
+
+.container {
+  padding-left: 0px;
+  margin: 0;
+  background-color: white;
+
+  /* poto cover utama */
+  display: absolute;
+  background-image: url(../poto/cover.jpg);
+  height: 600px;
+  width: 1300px;
+  background-size: cover;
+  background-position: 0 -750px;
+}
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 230px;
+}
+.content {
+  background-color: white;
+  opacity: 0.5;
+  text-align: center;
+  position: absolute;
+  bottom: -8px;
+}
+.content h2 {
+  background-color: white;
+  font-size: large
+  position: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+}
+.content .quotes1 {
+  position: center;
+  font-size: small;
+  text-align: center;
+  padding-bottom: 25px;
+  font-family: 'Caveat', cursive;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 10px;
+}
+/* akhir cover utama */
+
+/* konten header 2 */
+.header2 {
+  display: grid;
+  grid-template-areas: 'poto1 poto2';
+}
+
+.poto1 {
+  grid-area: poto1;
+  min-height: 300px;
+  background-image: url(../poto/cb997e.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  z-index: 2;
+}
+.poto1 h2 {
+  padding-top: 0px;
+  font-size: medium;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+.poto1 .kata1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: small;
+  line-height: 1.3;
+}
+.garisbawah {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: -25px;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  z-index: 3;
+}
+
+.poto2 {
+  grid-area: poto2;
+  min-height: 300px;
+  background-image: url(../poto/eddcd2.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  z-index: 2;
+}
+
+.poto2 h2 {
+  padding-top: 0px;
+  font-size: medium;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+.poto2 .kata2 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 15px;
+  font-size: small;
+  line-height: 1.3;
+}
+.garisbawah2 {
+  display: inline-block;
+  margin: auto;
+  margin-bottom: -25px;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  z-index: 3;
+}
