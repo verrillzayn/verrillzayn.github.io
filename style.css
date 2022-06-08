@@ -311,8 +311,8 @@ nav ul li a:hover {
   background-color: white;
 
   /* poto cover utama */
-  display: absolute;
-  background-image: url(../poto/cover.jpg);
+  
+  background-image: url(poto/cover.jpg);
   height: 600px;
   width: 1300px;
   background-size: cover;
@@ -339,7 +339,7 @@ nav ul li a:hover {
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 5px; 
 }
 .content .quotes1 {
   position: center;
@@ -362,7 +362,7 @@ nav ul li a:hover {
 .poto1 {
   grid-area: poto1;
   min-height: 300px;
-  background-image: url(../poto/cb997e.png);
+  background-image: url(poto/cb997e.png);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -396,7 +396,7 @@ nav ul li a:hover {
 .poto2 {
   grid-area: poto2;
   min-height: 300px;
-  background-image: url(../poto/eddcd2.png);
+  background-image: url(poto/eddcd2.png);
   background-position: center;
   background-size: cover;
   text-align: center;
