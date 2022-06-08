@@ -300,9 +300,6 @@ nav ul li a:hover {
     padding-left: 50px;
     font-size: 20px;
   }
-  .container {
-    background-position: 0 750px;
-  }
 }
 /* akhir responsive */
 
@@ -316,10 +313,10 @@ nav ul li a:hover {
   /* poto cover utama */
   
   background-image: url(poto/cover.jpg);
-  height: 600px;
-  width: 1300px;
+   height: 600px;
+  /*width: 1300px; */
   background-size: cover;
-  background-position: 0 -750px;
+ 
 }
 .header .judul {
   font-size: 40px;
