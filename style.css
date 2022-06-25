@@ -267,7 +267,6 @@ nav ul li a:hover {
 
 /* hp */
 @media screen and (max-width: 576px) {
-
   .menu-toggle {
     display: flex;
   }
@@ -315,11 +314,10 @@ nav ul li a:hover {
   background-color: white;
 
   /* poto cover utama */
-  
+
   background-image: url(poto/cover.jpg);
-   height: 600px;
+  height: 600px;
   background-size: cover;
- 
 }
 .header .judul {
   font-size: 40px;
@@ -337,12 +335,12 @@ nav ul li a:hover {
 }
 .content h2 {
   background-color: white;
-  font-size: large
+  font-size: large;
   position: center;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
-  letter-spacing: 5px; 
+  letter-spacing: 5px;
 }
 .content .quotes1 {
   position: center;
